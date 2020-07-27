@@ -37,7 +37,12 @@ const Map = () => {
       height='100vh'
       width='100vw'
       layers={layers}
-      getTooltip={({object}) => object && object.properties.description && object.properties.date}
+      getTooltip={({ object }) => object && {
+        html: `<p>${object.properties.date}</p>
+               <p>${object.properties.time}</p>
+               <p>${object.properties.description}</p>
+               `
+      }}
     >
       <StaticMap
        mapStyle='mapbox://styles/mrao2/cjzuiuexr09mn1crs8tz35s3k'

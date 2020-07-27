@@ -2,7 +2,7 @@ import React from 'react';
 import Map from './components/map'
 import Sidebar from './components/sidebar'
 
-import { GlobalProvider, GlobalContext } from './context/GlobalState'
+import { GlobalProvider } from './context/GlobalState'
 
 
 function App() {
