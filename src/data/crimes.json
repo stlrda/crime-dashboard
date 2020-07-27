@@ -1,0 +1,95 @@
+[
+    {
+        "label": "Fraud",
+        "value": "Fraud"
+    },
+    {
+        "label": "Simple Assault",
+        "value": "Simple Assault"
+    },
+    {
+        "label": "Loitering/Begging",
+        "value": "Loitering/Begging"
+    },
+    {
+        "label": "Arson",
+        "value": "Arson"
+    },
+    {
+        "label": "Offense Against Family",
+        "value": "Offense Against Family"
+    },
+    {
+        "label": "Sex Offense",
+        "value": "Sex Offense"
+    },
+    {
+        "label": "DWI/DUI",
+        "value": "DWI/DUI"
+    },
+    {
+        "label": "Forgery",
+        "value": "Forgery"
+    },
+    {
+        "label": "Disorderly Conduct",
+        "value": "Disorderly Conduct"
+    },
+    {
+        "label": "Embezzlement",
+        "value": "Embezzlement"
+    },
+    {
+        "label": "Robbery",
+        "value": "Robbery"
+    },
+    {
+        "label": "Other",
+        "value": "Other"
+    },
+    {
+        "label": "Stolen Property",
+        "value": "Stolen Property"
+    },
+    {
+        "label": "Burglary",
+        "value": "Burglary"
+    },
+    {
+        "label": "Weapons Offense",
+        "value": "Weapons Offense"
+    },
+    {
+        "label": "Rape",
+        "value": "Rape"
+    },
+    {
+        "label": "VMCSL",
+        "value": "VMCSL"
+    },
+    {
+        "label": "Vehicle Theft",
+        "value": "Vehicle Theft"
+    },
+    {
+        "label": "Larceny",
+        "value": "Larceny"
+    },
+    {
+        "label": "Destruction of Property",
+        "value": "Destruction of Property"
+    },
+    {
+        "label": "Aggravated Assault",
+        "value": "Aggravated Assault"
+    },
+    {
+        "label": "Liquor Laws",
+        "value": "Liquor Laws"
+    },
+    {
+        "label": "Homicide",
+        "value": "Homicide"
+    }
+
+]

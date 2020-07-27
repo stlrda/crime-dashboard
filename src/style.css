@@ -1,0 +1,35 @@
+:root {
+
+}
+
+body, p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.App {
+    position: relative;
+    
+
+}
+
+.map {
+    
+
+}
+
+
+.sidebar-container {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    box-shadow: 3px 3px 4px 5px rgba(0,0,0,0.2);
+    opacity: 92%
+    
+}
+
+
+
