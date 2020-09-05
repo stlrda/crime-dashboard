@@ -1,18 +1,23 @@
 import React from 'react';
-import Map from './components/map'
+import Main from './components/main'
 import Sidebar from './components/sidebar'
+import Header from './components/header'
+import Footer from './components/footer'
 
 import { GlobalProvider } from './context/GlobalState'
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <GlobalProvider>
-      <div className='map-container'><Map/></div>
-      <div className='sidebar-container'><Sidebar/></div>
+
+        <Header/>
+        <Main/>
+        <Sidebar/>
+        <Footer/>
+
       </GlobalProvider>
-      
     </div>
   );
 }

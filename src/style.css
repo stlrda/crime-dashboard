@@ -1,35 +1,134 @@
 :root {
+    --spacing: 1rem;
+    --header-height: 50px;
+    --footer-height: 40px;
+    --nav-width: 250px;
 
+    --primary-color: #344a5f;
+    --secondary-color: #2a94d6;
+    --grey: #f0f1f2;
+    --error: #cf5c60;
+    --confirm: #4ab471;
+    
+    /* post: #4eb1cb
+    account: #717ecd
+    opportunity: #f3ae4e */
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body, p {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    height: 100%;
+    overflow-x: hidden;
 
 }
 
-.App {
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    display: grid;
+    grid-template-rows:     var(--header-height) 1fr var(--footer-height);
+    grid-template-columns:  var(--nav-width) 1fr;
+    grid-template-areas:    "header  header"
+                            "sidebar    main"
+                            "footer footer"; 
+}
+
+.header {
+    display: flex;
+    flex-basis: 100%;
+    grid-area: header;
+    height: var(--header-height);
+    
+    align-items: center;
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.20);
     position: relative;
+}
+
+.sidebar {
+    flex: 0 0 var(--nav-width);
+    grid-area: sidebar;
+    background-color: var(--primary-color);
+    
+}
+
+.main {
+    flex: 1;
+    grid-area: main;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background-color: var(--grey);
+}
+
+.footer {
+    display: flex;
+    grid-area: footer;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--footer-height);
+    padding: 0 var(--spacing);
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+.logo-container {
+    display: flex;
+    flex: 0 0 var(--nav-width);
+    height: var(--header-height);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    color: #fff;
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+  
+}
+
+.nav-items{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0 var(--spacing);
+    padding-left: 5%
     
 
+}
+
+.navItem {
+    margin-right: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.form {
+    padding-top: 5%;
+    color: white;
 }
 
 .map {
-    
-
+    position: relative;
 }
-
-
-.sidebar-container {
-    position: absolute;
-    top: 40px;
-    left: 20px;
-    box-shadow: 3px 3px 4px 5px rgba(0,0,0,0.2);
-    opacity: 92%
-    
-}
-
-
-
